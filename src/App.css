@@ -1,38 +1,102 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter';
+}
+
+body{
+  background-color: #F66000;
+}
+
+header{
+  color: white;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+main{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.masterDiv{
+  margin-left: 4rem;
+}
+
+.h2{
   color: white;
+  font-weight: lighter;
+  text-align: center;
+  margin-top: 1em;
 }
 
-.App-link {
-  color: #61dafb;
+.itensMap{
+  width: 50vw;
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px;
+  justify-content: space-evenly;
+  margin-left: -5em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.itensDisplay{
+  width: 20vw;
+}
+
+.itensImages{
+  width: 15em;
+}
+
+.containerCart{
+  padding-left: 8em;
+}
+
+.containerSquare{
+  width: 20vw;
+  height: 60vh;
+  position: absolute;
+  background-color:#ffffffc4;
+  border-radius: 4em;
+  bottom: 9em;
+}
+
+.cartSquare{
+  width: 15vw;
+  height: 30vh;
+  position: relative;
+  background-color: #a3a3a370;
+  border-radius: 3em;
+  top: 3em;
+  left: 2em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cartIcon{
+  left: 4em;
+  width: 7.5vw;
+}
+
+.cartSquare p{
+  padding: 1em;
+  text-align: center;
+  font-size: 1em;
+}
+
+.btn-cart{
+  background-color: #a3a3a370;
+  width: 11vw;
+  height: 7vh;
+  border-radius: 2em;
+  position: relative;
+  left: 4em;
+  top: 6em;
+  display: flex;
+  justify-content: space-around;
+}
+
+.plus-circle, .minus-circle {
+  margin-top: 0.6em;
+  width: 2vw;
+  height: 4vh;
 }
